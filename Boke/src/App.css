@@ -1,0 +1,446 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #403429;
+    color: #ffffff;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #f2c572;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #f2c572;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f2c572;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .dropdown-content a:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #403429;
+  }
+  
+  .logo-and-image {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        margin: 20px;
+      
+  }
+  
+  .image {
+    background-color: #403429;
+    padding: 15px;
+  
+    /* Nueva regla para alinear a la izquierda en pantallas más pequeñas */
+    @media only screen and (max-width: 75em) {
+      float: left;
+      width: 50%; /* Ajusta el ancho según sea necesario */
+      margin-right: 20px; /* Ajusta el margen según sea necesario */
+    }
+  }
+  
+  .logo {
+    background-color: #403429;
+    border-left: #f2c572;
+    border-top: #ffffff;
+    border-bottom: #ffffff;
+    border-right: #f2c572;
+    border-style: solid;
+    margin-right: 10px;
+  }
+  .logo img,
+  .image img {
+    width: 500px;
+    height: auto;
+  
+    margin: 0 10px;
+  }
+  
+  .image {
+    display: grid;
+  }
+  .subtitulo {
+    margin: 50px;
+    margin-bottom: 170px;
+    margin-bottom: 170px;
+    padding: 60px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #a62e38;
+  }
+  
+  .main-content {
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  
+  .centered {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .centered2 {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Añadido para centrar verticalmente el contenido */
+  }
+  
+  .cierre {
+    border-left: #ffffff;
+    border-top: #ffffff;
+    border-bottom: #f2c572;
+    border-right: #ffffff;
+    border-style: solid;
+    margin-right: 10px;
+    padding: 50px;
+    font-style: italic;
+  }
+  footer {
+    background-color: #403429;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #f2c572;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .whatsapp {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .whatsapp a {
+    color: black;
+    text-decoration: none; /* Esto es opcional, quita la subrayado del enlace */
+  }
+  
+  .whatsapp a:hover {
+    color: #f2c572;
+  }
+  
+  .mi-parrafo-con-sangria {
+    text-indent: 60px;
+  }
+  
+  @media only screen and (max-width: 75em),
+    only screen and (max-device-width: 75em) {
+    /* Las reglas que quieres aplicar cuando la pantalla se achique un 25% o más */
+    .logo img,
+    .image img {
+      width: 80%;
+    }
+  
+    .image {
+      float: left;
+    }
+  
+    .img {
+      top: -10px;
+    }
+  
+    .subtitulo {
+      margin: 5px;
+      margin-bottom: 7px;
+      margin-bottom: 7px;
+      padding: 6px;
+    }
+  }
+  
+  /* Media query para pantallas pequeñas (teléfonos) */
+  @media only screen and (max-width: 600px) {
+    .header-content {
+      padding: 10px;
+    }
+  
+    .icon {
+      font-size: 20px;
+    }
+  
+    .image-quienes-somos {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .logo-and-image {
+      padding: 20px;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .logo img,
+    .image img {
+      width: 80%;
+      margin: 10px auto;
+    }
+  
+    .image {
+      padding: 5px;
+      margin-left: 20px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo img {
+      border-radius: 50%;
+      position: relative;
+      top: -50px;
+    }
+  
+    .logo {
+      border-left: #ffffff;
+      border-right: #ffffff;
+    }
+  
+    .main-content {
+      padding: 20px;
+      margin-bottom: 60px;
+    }
+  
+    .centered {
+      padding: 20px;
+    }
+  
+    footer {
+      padding: 10px;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .dropdown-content a {
+      border-bottom: 1px solid #fff;
+    }
+  
+    .dropdown-content a:last-child {
+      border-bottom: none;
+    }
+  
+    #articulos {
+      padding: 0;
+      display: flex;
+  
+      grid-gap: 20%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      text-align: center;
+      justify-content: center;
+      align-items: center; /* Centrar verticalmente el contenido */
+    }
+  
+    .subtitulo {
+      border-left: #ffffff;
+      border-top: #f2c572;
+      border-bottom: #f2c572;
+      border-right: #ffffff;
+      border-style: solid;
+      margin-right: 10px;
+      padding: 10px;
+    }
+    #quienes-somos {
+      text-align: center;
+      justify-content: center;
+    }
+    #quienes-somos p {
+      text-align: justify;
+    }
+  }
+  
+  /* estilo section */
+  
+  section {
+    border: 4px solid #f2c572;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  #quienes-somos {
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #articulos .item {
+    width: 100%;
+  }
+  
+  #articulos .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cambiado a tres columnas */
+    grid-template-rows: repeat(2, auto); /* Dos filas */
+    grid-gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* Centrar verticalmente el contenido */
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  #articulos,
+  #quienes-somos {
+    overflow: auto;
+  }
+  
+  #articulos .item {
+    width: 100%;
+  }
+  #articulos img {
+    width: 100%;
+    height: 200px; /* Puedes ajustar la altura según tus necesidades */
+    object-fit: cover; /* Esto asegura que la imagen mantenga su relación de aspecto y cubra el contenedor */
+    border: 2px solid #f2c572;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  #articulos .item p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  #articulos img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  #contacto {
+    text-align: center;
+  }
+  
+  #informacion-adicional {
+    border: none;
+  }
+  
+  /* Estilos para el botón de login */
+  .login-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #loginBtn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el popup */
+  .login-popup {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    z-index: 1;
+  }
+  
+  /* Otros estilos (puedes personalizarlos según tu diseño) */
+  form {
+    background-color: #403429;
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
