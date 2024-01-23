@@ -5,6 +5,8 @@ import Cards from './Components/Cards';
 import Contact from './Components/Contact';
 import About from './Components/About';
 import Footer from './Components/Footer';
+import Whatsapp from "./Components/Whatsapp";
+import Login from './Components/Login';
 
 import './App.css';
 
@@ -18,6 +20,8 @@ const App = () =>{
           <Contact/>
           <About/>
           <Footer/>
+          <Whatsapp/>
+          <Login/>
 
       </div>
   );

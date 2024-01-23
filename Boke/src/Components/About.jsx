@@ -1,4 +1,5 @@
 import React from 'react';
+import imagen5 from '../assets/imagen5.jpg';
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
           identidad cultural maliense. Nuestro lugar de trabajo se encuentra del
           otro lado del Atlántico, en Chapalmadal.
         </p>
-        <img src="imagen5.jpg" alt="Imagen 5" className="image-quienes-somos" />
+        <img src={imagen5} alt="Imagen 5" className="image-quienes-somos" />
       </div>
     </section>
   );
