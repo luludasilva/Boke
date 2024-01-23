@@ -1,5 +1,13 @@
-import Login from './Login'; 
+import React, { useState } from 'react';
+import Login from './Login';
+
 const Nav = () => {
+  const [showLogin, setShowLogin] = useState(false);
+
+  const toggleLogin = () => {
+    setShowLogin(!showLogin);
+  };
+
   return (
     <header>
       <div className="header-content">
@@ -10,10 +18,11 @@ const Nav = () => {
               <a href="#articulos">Artículos</a>
               <a href="#contacto">Contacto</a>
               <a href="#quienes-somos">Quienes somos</a>
+              <button onClick={toggleLogin}>Login</button>
             </div>
           </div>
         </div>
-          <Login/>
+        {showLogin && <Login />}
       </div>
     </header>
   );

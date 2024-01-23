@@ -11,7 +11,7 @@ const Cards = () => {
     <section id="articulos" className="main-content">
       {/* Dentro de la sección de Artículos */}
       <div className="centered">
-        <h2>Artículos</h2>
+        <h2 className="contact-heading">Artículos</h2>
         <div className="container">
           <div className="item">
             <img src={Mochilas} alt="Mochilas" className="item-img" />

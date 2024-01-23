@@ -3,9 +3,9 @@ import imagen5 from '../assets/imagen5.jpg';
 
 const About = () => {
   return (
-    <section id="quienes-somos" className="main-content">
+    <section id="quienes-somos" className="main-content text-center">
       <div className="centered2">
-        <h2>Quienes somos</h2>
+        <h2 className="contact-heading">Quienes somos</h2>
         <p className="mi-parrafo-con-sangria">
           Prendas y accesorios inspirados en el Bogolan. Este es un tejido de
           algodón maliense hecho a mano tradicionalmente teñido con barro
