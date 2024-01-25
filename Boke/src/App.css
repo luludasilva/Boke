@@ -177,19 +177,10 @@ body {
     display: block;
   }
   
-  .whatsapp {
-    font-size: 20px;
-    font-weight: 600;
+  .whatsapp-icon {
+    color: #0eda33; 
   }
   
-  .whatsapp a {
-    color: black;
-    text-decoration: none; /* Esto es opcional, quita la subrayado del enlace */
-  }
-  
-  .whatsapp a:hover {
-    color: #f2c572;
-  }
   
   .mi-parrafo-con-sangria {
     text-indent: 60px;
@@ -390,6 +381,10 @@ body {
     text-align: center;
   }
   
+  .instagram-icon {
+    color: #403429; 
+  }
+
   #informacion-adicional {
     border: none;
   }
@@ -424,7 +419,7 @@ body {
   
   /* Otros estilos (puedes personalizarlos según tu diseño) */
   form {
-    background-color: #403429;
+    background-color: hsl(29, 22%, 21%);
     display: grid;
     grid-gap: 10px;
   }
